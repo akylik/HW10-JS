@@ -4,7 +4,8 @@
 // }
 
 function playSound(e) {
-   const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+   const audio = document.querySelector(`audio[data-letter="${e.code}"]`);
+   // const audio = document.querySelector(`audio[data-key="KeyA"]`);
    // const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
    // const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
    if (!audio) return;
@@ -17,3 +18,8 @@ function playSound(e) {
 // const keys = Array.from(document.querySelectorAll('.key'));
 // keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', playSound);
+
+
+
+
+// https://learn.javascript.ru/keyboard-events
