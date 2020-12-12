@@ -1,52 +1,116 @@
-/* html {
-   font-size: 10px;
-   background: url("https://i.imgur.com/b9r5sEL.jpg") bottom center;
-   background-size: cover;
-} */
-
-/* body,
-html {
-   margin: 0;
-   padding: 0;
-   font-family: sans-serif;
-} */
-
-.keys {
-   display: flex;
-   flex: 1;
-   min-height: 100vh;
-   align-items: center;
-   justify-content: center;
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
 }
 
-.key {
-   border: 0.4rem solid black;
-   border-radius: 0.5rem;
-   margin: 1rem;
-   font-size: 1.5rem;
-   padding: 1rem 0.5rem;
-   transition: all 0.07s ease;
-   width: 10rem;
-   text-align: center;
-   color: white;
-   background: rgba(0, 0, 0, 0.4);
-   text-shadow: 0 0 0.5rem black;
+a {
+  color: #3c3d41; /* Цвет ссылок */
+}
+/*a:visited {
+    color: #3c3d41; /* Цвет посещенных ссылок 
+   }*/
+a:active {
+  color: #3c3d41; /* Цвет активных ссылок */
 }
 
-.playing {
-   transform: scale(1.1);
-   border-color: #ffc600;
-   box-shadow: 0 0 1rem #ffc600;
+nav,
+footer,
+header,
+aside {
+  display: block;
 }
 
-kbd {
-   display: block;
-   font-size: 4rem;
+html,
+body {
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
-.sound {
-   font-size: 1.2rem;
-   text-transform: uppercase;
-   letter-spacing: 0.1rem;
-   color: #ffc600;
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  /* flex: 1; */
+  align-items: center;
+}
+.card {
+  width: 150px;
+  border: 4px solid rgb(19, 4, 85);
+  border-radius: 8px;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  background: rgba(46, 87, 173, 0.568);
+  text-shadow: 0 0 0.5rem black;
+}
+.card-img {
+  width: 100%;
+}
+.letter-sound {
+  font-size: 16px;
+  color: #ffc600;
+  line-height: 25px;
 }

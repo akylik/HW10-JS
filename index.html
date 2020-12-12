@@ -1,171 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>HW10-JS</title>
-   <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-   <div class="keys">
-      <div data-letter="KeyA" class="key">
-         <div>A</div>
-         <span class="sound">clap</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HW10-JS</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" data-letter="KeyB">
+        <div>
+          <img class="card-img" src="img/bear.jpg" alt="bear" />
+        </div>
+        <span class="letter-sound">B</span>
       </div>
-      <!-- <div data-key="83" class="key">
-         <kbd>S</kbd>
-         <span class="sound">hihat</span>
+      <div class="card" data-letter="KeyC">
+        <div>
+          <img class="card-img" src="img/cat.jpg" alt="cat" />
+        </div>
+        <span class="letter-sound">C</span>
       </div>
-      <div data-key="68" class="key">
-         <kbd>D</kbd>
-         <span class="sound">kick</span>
+      <div class="card" data-letter="KeyD">
+        <div>
+          <img class="card-img" src="img/dolphin.jpg" alt="dolphin" />
+        </div>
+        <span class="letter-sound">D</span>
       </div>
-      <div data-key="70" class="key">
-         <kbd>F</kbd>
-         <span class="sound">openhat</span>
+      <div class="card" data-letter="KeyE">
+        <div>
+          <img class="card-img" src="img/elephant.jpg" alt="elephant" />
+        </div>
+        <span class="letter-sound">E</span>
       </div>
-      <div data-key="71" class="key">
-         <kbd>G</kbd>
-         <span class="sound">boom</span>
+      <div class="card" data-letter="KeyH">
+        <div>
+          <img class="card-img" src="img/horse.jpg" alt="horse" />
+        </div>
+        <span class="letter-sound">H</span>
       </div>
-      <div data-key="72" class="key">
-         <kbd>H</kbd>
-         <span class="sound">ride</span>
+      <div class="card" data-letter="KeyL">
+        <div>
+          <img class="card-img" src="img/lynx.jpg" alt="lynx" />
+        </div>
+        <span class="letter-sound">L</span>
       </div>
-      <div data-key="74" class="key">
-         <kbd>J</kbd>
-         <span class="sound">snare</span>
+      <div class="card" data-letter="KeyW">
+        <div>
+          <img class="card-img" src="img/wolf.jpg" alt="wolf" />
+        </div>
+        <span class="letter-sound">W</span>
       </div>
-      <div data-key="75" class="key">
-         <kbd>K</kbd>
-         <span class="sound">tom</span>
-      </div>
-      <div data-key="76" class="key">
-         <kbd>L</kbd>
-         <span class="sound">tink</span>
-      </div> -->
-   </div>
-
-   <audio data-letter="KeyA" src="sounds/clap.wav"></audio>
-   <!-- <audio data-key="65" src="sounds/clap.wav"></audio> -->
-   <audio data-key="83" src="sounds/hihat.wav"></audio>
-   <audio data-key="68" src="sounds/kick.wav"></audio>
-   <audio data-key="70" src="sounds/openhat.wav"></audio>
-   <audio data-key="71" src="sounds/boom.wav"></audio>
-   <audio data-key="72" src="sounds/ride.wav"></audio>
-   <audio data-key="74" src="sounds/snare.wav"></audio>
-   <audio data-key="75" src="sounds/tom.wav"></audio>
-   <audio data-key="76" src="sounds/tink.wav"></audio>
-
-
-   <script src="js/main.js"></script>
-</body>
-
+    </div>
+    <audio data-letter="KeyL" src="sounds/jaguar.mp3"></audio>
+    <audio data-letter="KeyC" src="sounds/cat.mp3"></audio>
+    <audio data-letter="KeyD" src="sounds/dolphin.mp3"></audio>
+    <audio data-letter="KeyH" src="sounds/horse.mp3"></audio>
+    <audio data-letter="KeyW" src="sounds/wolf.mp3"></audio>
+    <audio data-letter="KeyB" src="sounds/bear.mp3"></audio>
+    <audio data-letter="KeyE" src="sounds/elephant.mp3"></audio>
+    <script src="js/main.js"></script>
+  </body>
 </html>
-
-
-
-
-<!-- Клавиша	Код
-backspace	8
-tab	9
-enter	13
-shift	16
-ctrl	17
-alt	18
-pause/break	19
-caps lock	20
-escape	27
-spacebar	32
-page up	33
-page down	34
-end	35
-home	36
-left arrow	37
-up arrow	38
-right arrow	39
-down arrow	40
-insert	45
-delete	46
-0	48
-1	49
-2	50
-3	51
-4	52
-5	53
-6	54
-7	55
-8	56
-9	57
-a/ф	65
-b/и	66
-c/с	67
-d/в	68
-e/у	69
-f/а	70
-g/п	71
-h/р	72
-i/ш	73
-j/о	74
-k/л	75
-l/д	76
-m/ь	77
-n/т	78
-o/щ	79
-p/з	80
-q/й	81
-r/к	82
-s/ы	83
-t/е	84
-u/г	85
-v/м	86
-w/ц	87
-x/ч	88
-y/н	89
-z/я	90
-left window	91
-right window	92
-select	93
-numpad 0	96
-numpad 1	97
-numpad 2	98
-numpad 3	99
-numpad 4	100
-numpad 5	101
-numpad 6	102
-Клавиша	Код
-numpad 7	103
-numpad 8	104
-numpad 9	105
-multiply	106
-add	107
-subtrack	109
-decimal point	110
-divide	111
-f1	112
-f2	113
-f3	114
-f4	115
-f5	116
-f6	117
-f7	118
-f8	119
-f9	120
-f10	121
-f11	122
-f12	123
-num lock	144
-scroll lock	145
-semi-colon	186
-equal sign	187
-comma	188
-dash	189
-period	190
-forward slash	191
-grave accent	192
-open bracket	219
-back slash	220
-close bracket	221
-single quote	222 -->
