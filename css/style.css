@@ -105,6 +105,11 @@ h6 {
   text-align: center;
   background: rgba(46, 87, 173, 0.568);
   text-shadow: 0 0 0.5rem black;
+  cursor: pointer;
+  user-select: none;
+}
+.card.active{
+   transform: scale(1.2);
 }
 .card-img {
   width: 100%;
