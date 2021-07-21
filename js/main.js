@@ -16,9 +16,6 @@ function playSound(e) {
     card.classList.remove("active");
   });
 
-  //  audio.addEventListener("pause", () => {
-  //    card.classList.remove("active");
-  //  });
 }
 
 function playSoundOnClick(e) {
